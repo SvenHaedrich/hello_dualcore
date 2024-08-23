@@ -1,13 +1,12 @@
-# VIEGA CAN Bridge
+# nRF54L15 ARM and RISC V
 
-Investigate a proof of concept that bridges between an Aqua VIP CAN bus and a bluetooth mesh.
+First project to use both cores of the nRF54L15
 
 ## Hardware
 
 The following hardware is used for the project:
 
-- [Nordic nRF52840 DK](https://www.nordicsemi.com/Products/Development-hardware/nRF52840-DK)
-- [seeed studio CAN-BUS Shield V2.0](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/)
+- Nordic nRF54L15 PDK
 
 ## Firmware
 
@@ -26,7 +25,7 @@ The following hardware is used for the project:
 	python3 -m pip install west
 	
 	# initialize workspace
-	west init -m https://github.com/SvenHaedrich/hello_riscv --mr main nRF54L15
+	west init -m https://github.com/SvenHaedrich/hello_dualcore --mr main nRF54L15
 	cd nrf54L15
 	west update
 	
