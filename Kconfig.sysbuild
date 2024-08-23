@@ -1,0 +1,7 @@
+# Copyright (c) 2024 Nordic Semiconductor ASA
+# SPDX-License-Identifier: Apache-2.0
+
+source "${ZEPHYR_BASE}/share/sysbuild/Kconfig"
+
+config RISCV_CPU
+	string "The cpu used for risc v target"
