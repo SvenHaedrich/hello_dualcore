@@ -57,7 +57,7 @@ and
 ### Sysbuild
 
 The canonical way two handle this situation is to use Zephyr's [sysbuild](https://docs.zephyrproject.org/latest/build/sysbuild/index.html). The sysbuild will need some additional configuration files. In this sample
-the sysbuild is driven by `sysbuild.cmake`. As of now that attempt files, there seems to be something rotten in the RISC V device tree configuration.
+the sysbuild is driven by `sysbuild.cmake`. As of now that attempt fails, there seems to be something rotten in the RISC V device tree configuration.
 
 	west build --board nrf54l15pdk/nrf54l15/cpuapp -S nordic-flpr --sysbuild hello_dualcore -- -DSB_CONFIG_RISCV_CPU='"nrf54l15pdk/nrf54l15/cpuflpr"'
 
